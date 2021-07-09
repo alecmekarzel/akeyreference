@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Stardos+Stencil:400,700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap')
+
+*
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+
+$scale: 0.7
+
+html, body
+	background: lighten(#f9e8d9, 6)
+	margin: 0
+	padding: 20px
+
+.logo
+	color: rgba(black, 0.6)
+	font-size: 50px
+	font-family: 'Nanum Brush Script', cursive
+	text-align: center
+	margin-bottom: 30px
+
+.title
+	color: rgba(white, 0.9)
+	font-size: 20px
+	font-weight: 500
+	background: rgba(black, 0.9)
+	padding: 8px 8px
+
+.section
+	display: inline-block
+	margin: 4px 8px
+	margin-top: 16px
+
+.container
+	.left-hand
+		.name
+			text-align: right
+			margin-right: 10px
+
+.keyboards
+	text-align: center
+
+.keyboard
+	font-size: 0
+	background: #3E3E3E
+	padding: 6px 4px 3px 4px
+	border-radius: 3px
+	// margin: 4px 8px
+	// box-shadow: 0px 1px 2px rgba(black, 0.3)
+
+	white-space: nowrap
+	display: inline-block
+
+	position: relative
+
+.info
+	text-align: left
+
+.name, .type, .download
+	vertical-align: middle
+	line-height: 1
+
+.type, .download
+	color: white
+	font-size: 11px
+	font-weight: 500
+	background: rgba(red, 0.8)
+	padding: 3px 7px
+	border-bottom: 1px solid rgba(black, 0.3)
+	border-radius: 3px
+	margin-left: 8px
+
+.download
+	color: rgba(black, 0.8)
+	background: #CDCDCD
+
+	cursor: pointer
+
+	&:hover
+		background: #C2C2C2
+
+.name
+	color: #D20909
+	font-size: 16px
+	font-weight: 700
+	margin-top: 6px
+	margin-bottom: -6px
+	margin-left: 8px
+
+
+.white-key
+	width: 26px * $scale
+	height: 131px * $scale
+	background: #EFEFEF
+	border-bottom: 1px solid rgba(black, 0.2)
+	border-right: 0.5px solid rgba(black, 0.2)
+	border-left: 0.5px solid rgba(black, 0.1)
+	border-radius: 2px
+	margin: 0
+
+	display: inline-block
+
+.black-key
+	display: inline-block
+
+.black-key:after
+	width: 18px * $scale
+	height: 84px * $scale
+	content: ''
+	background: #252525
+	border-bottom: 1px solid black
+	border-right: 0.5px solid black
+	border-left: 0.5px solid black
+	border-radius: 2px
+	margin: 0
+
+	display: inline-block
+
+	z-index: 1
+
+.white-key, .black-key:after
+	position: relative
+	vertical-align: text-top
+
+	border-top-left-radius: 0
+	border-top-right-radius: 0
+
+.white-key.red, .black-key.red:after
+	background: #D20909
+	border-bottom-color: rgba(black, 0.5)
+	border-right-color: rgba(black, 0.5)
+	border-left-color: rgba(black, 0.3)
+
+.black-key
+	position: relative
+
+	&:after
+		position: absolute
+		left: -10px * $scale
+
+
+.number
+	width: 100%
+	color: white
+	font-size: 13px
+	font-weight: 500
+	text-align: center
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5)
+	display: block
+
+	z-index: 10
+
+	position: absolute
+	left: 0
+	bottom: 3px
+
+.black-key .number
+	left: -4px
+	bottom: -80px * $scale

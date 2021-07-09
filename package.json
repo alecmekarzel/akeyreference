@@ -1,0 +1,27 @@
+{
+ "name": "akeyreference",
+ "version": "0.0.1",
+ "description": "A visual for piano, guitar, and musical notation.",
+ "main": "index.js",
+ "dependencies": {
+  "downloadjs": "^1.4.7",
+  "file-saver": "^2.0.2",
+  "html-to-image": "^0.1.1",
+  "react": "^16.13.1",
+  "react-dom": "^16.13.1"
+ },
+ "devDependencies": {
+  "@babel/plugin-proposal-class-properties": "^7.10.4",
+  "parcel": "^1.12.4",
+  "parcel-bundler": "^1.12.4",
+  "sass": "^1.26.10",
+  "stylus": "^0.54.7"
+ },
+ "scripts": {
+  "start": "parcel src/index.html --open",
+  "build": "parcel build src/index.html",
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "Alec Mekarzel",
+ "license": "ISC"
+}
