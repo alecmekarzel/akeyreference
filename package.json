@@ -1,27 +1,30 @@
 {
- "name": "akeyreference",
- "version": "0.0.1",
- "description": "A visual for piano, guitar, and musical notation.",
- "main": "index.js",
- "dependencies": {
-  "downloadjs": "^1.4.7",
-  "file-saver": "^2.0.2",
-  "html-to-image": "^0.1.1",
-  "react": "^16.13.1",
-  "react-dom": "^16.13.1"
- },
- "devDependencies": {
-  "@babel/plugin-proposal-class-properties": "^7.10.4",
-  "parcel": "^1.12.4",
-  "parcel-bundler": "^1.12.4",
-  "sass": "^1.26.10",
-  "stylus": "^0.54.7"
- },
- "scripts": {
-  "start": "parcel src/index.html --open",
-  "build": "parcel build src/index.html",
-  "test": "echo \"Error: no test specified\" && exit 1"
- },
- "author": "Alec Mekarzel",
- "license": "ISC"
+  "name": "akeyreference-updated",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.11.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
+  }
 }

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Stardos+Stencil:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+html,
+body {
+	background: #fdf8f3;
+	margin: 0;
+	padding: 20px;
+}
+
+.logo {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 50px;
+	font-family: 'Nanum Brush Script', cursive;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.title {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 20px;
+	font-weight: 500;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 8px 8px;
+}
+
+.section {
+	display: inline-block;
+	margin: 4px 8px;
+	margin-top: 16px;
+}
+
+.container .left-hand .name {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.keyboards {
+	text-align: center;
+}
+
+.keyboard {
+	font-size: 0;
+	background: #3e3e3e;
+	padding: 6px 4px 3px 4px;
+	border-radius: 3px;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+}
+
+.info {
+	text-align: left;
+}
+
+.name,
+.type,
+.download {
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.type,
+.download {
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	background: rgba(255, 0, 0, 0.8);
+	padding: 3px 7px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	margin-left: 8px;
+}
+
+.download {
+	color: rgba(0, 0, 0, 0.8);
+	background: #cdcdcd;
+	cursor: pointer;
+}
+.download:hover {
+	background: #c2c2c2;
+}
+
+.name {
+	color: #d20909;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 6px;
+	margin-bottom: -6px;
+	margin-left: 8px;
+}
+
+.white-key {
+	width: 18.2px;
+	height: 91.7px;
+	background: #efefef;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+	border-left: 0.5px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	margin: 0;
+	display: inline-block;
+}
+
+.black-key {
+	display: inline-block;
+}
+
+.black-key:after {
+	width: 12.6px;
+	height: 58.8px;
+	content: '';
+	background: #252525;
+	border-bottom: 1px solid black;
+	border-right: 0.5px solid black;
+	border-left: 0.5px solid black;
+	border-radius: 2px;
+	margin: 0;
+	display: inline-block;
+	z-index: 1;
+}
+
+.white-key,
+.black-key:after {
+	position: relative;
+	vertical-align: text-top;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.white-key.red,
+.black-key.red:after {
+	background: #d20909;
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-right-color: rgba(0, 0, 0, 0.5);
+	border-left-color: rgba(0, 0, 0, 0.3);
+}
+
+.black-key {
+	position: relative;
+}
+.black-key:after {
+	position: absolute;
+	left: -7px;
+}
+
+.number {
+	width: 100%;
+	color: white;
+	font-size: 13px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+	display: block;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+}
+
+.black-key .number {
+	left: -4px;
+	bottom: -56px;
+}
